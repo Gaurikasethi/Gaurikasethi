@@ -1,0 +1,82 @@
+#include<stdio.h>
+#include<math.h>
+#include<stdlib.h>
+int main(){
+printf("-----WELCOME TO DIGITAL CALCULATER------");
+printf("\n");
+printf("......Here are the operations you can perform........->");
+printf("1.Addition(0) \n2.Subtraction(1) \n3.Multiplication(2) \n4.Divission(3) \n5.Exponential operations(4) \n");
+printf(".......For trigonometric functions......(Enter 'T')");
+printf("\n1.Sin function(a) \n2.Cos function(b) \n3.Tan function(c) \n4.Cosec funtion(d) \n5.Cot function(e) \n6.Sec funtion(f)");
+printf("\n Enter number of the operation you wan tto perform:");
+char ch,c;
+scanf("%c",ch);
+if(ch=='T'){
+    int angle;
+    printf("\nEnter angle for trigonometric operations(in radian): ");
+    scanf("%lf",&angle);
+    printf("\n Enter the operations you want to perform(written in barckets)");
+    scanf("%c",&c);
+    switch (c)
+    {
+    case 'a':
+        double angle,Sin;
+        Sin=sin(angle);
+        printf("\nangle:%lf, in radians converted t:%lf sin",angle,Sin);
+        break;
+    case 'b':
+        double angle,Cos;
+        Cos=cos(angle);
+        printf("\nangle:%lf, in radians converted t:%lf cos",angle,Cos);
+        break;
+    case 'c':
+        double angle,Tan;
+        Tan=tan(angle);
+        printf("\nangle:%lf, in radians converted t:%lf tan",angle,Tan);
+        break;
+    case 'd':
+        double angle,Cosec;
+        Cosec=cosec(angle);
+        printf("\nangle:%lf, in radians converted t:%lf cosec",angle,Cosec);
+        break;
+    case 'e':
+        double angle,Cot;
+        Cot=cot(angle);
+        printf("\nangle:%lf, in radians converted t:%lf cot",angle,Cot);
+        break;
+    case 'f':
+        double angle,Sec;
+        Sec=sec(angle);
+        printf("\nangle:%lf, in radians converted t:%lf sin",angle,Sec);
+        break;
+    }
+}else{
+int num,a,b;
+printf("\n Enter the operations you want to perform(written in barckets)");
+scanf("%d",&num);
+printf("\n Enter the first number: ");
+scanf("%d",&a);
+printf("\n Enter the first number: ");
+scanf("%d",&b);
+switch (num)
+{
+case 0:
+     printf("\nRESULT IS: %d",a+b);
+    break;
+case 1:
+     printf("\nRESULT IS: %d",a-b);
+    break;
+case 2:
+     printf("\nRESULT IS: %d",a*b);
+    break;
+
+case 3:
+     printf("\nRESULT IS: %d",a/b);
+    break;
+case 4:
+     printf("\nRESULT IS: %d",pow(a,b));
+    break;
+}
+}
+return 0;
+}
