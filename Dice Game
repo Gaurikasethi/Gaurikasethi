@@ -1,0 +1,8 @@
+import random
+choice="Y"
+while choice=="Y":
+    print("-------WELCOME TO DICE GAME-------")
+    print("You Got: ",random.randint(1,6))
+    choice=input("DO YOU WANT TO CONTINUE?(Y/N) ")
+    if choice=="N":
+        print("---THANK YOU FOR PLAYING---")
