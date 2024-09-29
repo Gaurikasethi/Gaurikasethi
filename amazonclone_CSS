@@ -146,10 +146,27 @@
 .hero-msg a{
     color: #007185;
 }
-.shop-section{
+.shop-section-1{
     display: flex;
     justify-content: space-evenly;
     background-color: #e2e2e2;
+}
+.shop-section-2{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #e2e2e2;
+}
+.shop-section-3{
+    height: 218.5px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #e2e2e2;
+    padding: 10px 20px;
+}
+.shop-section-3 h2{
+    height: 31.25px;
+    margin: 10px 0px 0px;
+    font-weight: 700px;
 }
 .box{
     height: 400px;
